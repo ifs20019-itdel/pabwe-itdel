@@ -1,0 +1,37 @@
+<!--
+    Nama  : Hedrin S. Sitorus
+    NIM   : 11S20019
+    Kelas : 13IF1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+</head>
+<body>
+    <h1><a href="login.html" target="_blank">Form Login</a></h1>
+<form action="login.html" method="POST">
+<hr>
+    <fieldset>
+        <legend><b>Masukkan Akun Anda Disini</b></legend>
+        <table>
+            <tr>
+                <td><b><label for="name">Username : </label></b></td>
+                <td><input type="text" maxlenght="8" id="name" pattern="[A-Za-z]{4,}"required></td>
+            </tr>
+       
+            <tr>
+                <td><b><label for="password">Password : </label></b></td>
+                <td><input type="password" pattern="[a-zA-Z]{8,}" id="password"required></td>
+            </tr>
+            <tr>
+                <td><p><button type="Login">Login</button></td>
+                <td><a href="#">Forgot username/password</a></tr></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>
