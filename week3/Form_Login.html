@@ -1,0 +1,61 @@
+<!--
+    Nama  : Hedrin S. Sitorus
+    NIM   : 11S20019
+    Kelas : 13IF1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Login</title>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <h1><a href="" >Form Login</a></h1>
+<form action="" method="get" id="something" oninput="userName.value = 'Username : ' + usernameTxt.value, passWord.value ='Password : ' + passwordTxt.value">
+<hr>
+    <fieldset>
+        <legend><b>Masukkan Akun Anda Disini</b></legend>
+        <img src="../week3/logo_del.jpg" alt="foto_profil" width="100" >
+        <table>
+            <!-- <tr>
+                <td><b><label for="name">Nama : </label></b></td>
+                <td><input type="text"  id="name" pattern="[A-Za-z]{3,}"required placeholder="Nama"></td>
+            </tr> -->
+            <tr>
+                <td><b><label for="name">Username : </label></b></td>
+                <td><input type="text" id="name" pattern="[A-Za-z0-9]{4,}"required placeholder="Username"></td>
+            </tr>
+       
+            <tr>
+                <td><b><label for="password">Password : </label></b></td>
+                <td><input type="password" pattern="[a-zA-Z0-9]{8,}" id="password" required placeholder="maks 8 karakter, terdiri dari 1 huruf kapital,1 angka"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="Login"  onclick="myFunction()">Login</button>
+                    <script>
+                        function myFunction(){
+                            if(usernameCheck == 'Hedrin' && passwordCheck == 'Sitorus44'){
+                                alert('login berhasil')
+                            } else{
+                                alert('Username atau password gagal')
+                            }
+                        }
+                        userName.value = tempUsername;
+                        passWord.value = tempPassword;
+                    </script>
+                </td>
+
+                <td><a href="./forgotten.html">Forgot username/password</a></tr></td>
+            </tr>
+        </table>
+    </fieldset>
+    <output id="username"></output><br>
+    <output id="passWord"></output>
+</body>
+</html>
