@@ -46,7 +46,7 @@
               >Minggu Ke-4</a
             >
             <a
-              href="./minggu5/dom1.html"
+              href="/minggu5/dom1.html"
               class="list-group-item list-group-item-action"
               >Minggu Ke-5</a
             >
