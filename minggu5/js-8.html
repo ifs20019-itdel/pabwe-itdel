@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="kuis"></p>
+    <script>
+        //deklarasi variabel & array
+        var i;
+        var ikan = new Array(5);
+        //memasukkan 5 data ke dalam array
+        for(i=0; i<5; i++){
+            ikan [i] = window.prompt("Masukkan 5 nama ikan");
+        }
+        //tampilkan ke-5 data tersebut
+        for(i=0;i<5;i++){
+            document.write("Nama ikan: "+ ikan[i]);
+            document.write("<br/>")
+        }
+    </script> 
+    <p>Selamat anda memenangkan sepeda!</p> 
+</body>
+</html>

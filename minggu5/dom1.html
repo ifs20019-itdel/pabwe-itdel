@@ -1,0 +1,65 @@
+<!-- 
+    Nama File   : mahasiswa.html
+    NIM         : 11S20019
+    Kelas       : 13IF1
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-OXTEbYDqaX2ZY/BOaZV/yFGChYHtrXH2nyXJ372n2Y8abBhrqacCEe+3qhSHtLjy"
+      crossorigin="anonymous"
+    />
+<style>
+    .red{
+            color:purple;
+        }
+    </style>
+    <title>Website</title>
+  </head>
+  <body>
+    <br>
+    <form action="" method="get">
+  <div class="form-group">
+   <label for="yourName" style="padding-left:8px;">Masukkan Nama Anda :</label>
+    <input type="text" class="form-control" id="yourName" aria-describedby="emailHelp" placeholder="Nama Kamu...." style="width:400px;border-radius:15px;position:sticky;left:6px">
+      <button type="button" class="btn btn-dark" onclick="displayName();"style="width:120px;top:135px;border-radius:15px;position: absolute;left:8px;">Insert</button>
+
+                      <h5 id="infoName" style="left:11px;position:absolute;top:92px;">Nama saya adalah <span id="displayName"></span></h5>
+                      <br>
+                      <hr>
+                <button type="button" onclick="changeColor()" class="btn btn-primary" style="border-radius:15px;position:absolute;top:180px;left:8px;width:120px;">Ubah Warna</button>
+    
+
+    <script>
+                function displayName(){
+            let name = document.getElementById("yourName").value;
+
+            document.getElementById("displayName").innerText = name;
+        }
+
+        // Mengubah warna
+        function changeColor(){
+            if(document.getElementById("infoName").classList.contains("red")){
+                document.getElementById("infoName").classList.remove("red");
+                document.getElementById("btnToggleShow").innerText = "Sembunyikan";
+            }else{
+                document.getElementById("infoName").classList.add("red");
+                document.getElementById("btnToggleShow").innerText = "Tampilkan";
+                document.getElementById("infoName").classList.remove("red");
+                
+            }
+        }
+    </script>
+    </form>
+
+  </body>
+</html>
+
