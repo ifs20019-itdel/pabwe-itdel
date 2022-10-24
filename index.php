@@ -51,7 +51,7 @@
               >Minggu Ke-5</a
             >
             <a
-              href="/week6-7/public/index.php"
+              href="/week6-7/public/index.html"
               class="list-group-item list-group-item-action"
               >Minggu Ke-6 dan 7</a
             >
