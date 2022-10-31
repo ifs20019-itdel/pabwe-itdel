@@ -62,7 +62,7 @@
               >Minggu Ke-9</a
             >
             <a
-              href="/week10/welcoming.blade.php"
+              href="http://127.0.0.1:8000/welcome/welcoming"
               class="list-group-item list-group-item-action"
               >Minggu Ke-10</a
             >
