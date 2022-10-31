@@ -62,7 +62,7 @@
               >Minggu Ke-9</a
             >
             <a
-              href="#"
+              href="/week10/welcoming.blade.php"
               class="list-group-item list-group-item-action"
               >Minggu Ke-10</a
             >
