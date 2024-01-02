@@ -47,12 +47,13 @@
                                 <br><br>
                                 <label for="email">Email yang digunakan<font color="red">*</font></label>
                                 <br>
-                                <input type="email" id="email" pattern="[A-Za-z]{5,23}" required placeholder="example@gmail.com">
+                                <input type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                                title="Masukkan alamat email yang valid" required placeholder="example@gmail.com">
 
                                 <br><br>
                                 <label for="noWA">Nomor Whatsapp Aktif <font color="red">*</font></label>
                                 <br>
-                                <input type="text" id="noWA" pattern="[0-9]{12,}" required placeholder="08xx xxxx xxxx">
+                                <input type="tel" id="noWA" pattern="[0-9]{12,}" required placeholder="08xx xxxx xxxx">
                             
                                 <br><br><input type="submit" name="submit" value="Kirim">
                             </form>
