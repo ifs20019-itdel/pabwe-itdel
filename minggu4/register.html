@@ -55,7 +55,7 @@
                     id="Nama"
                     pattern="[A-Za-z]{4,}"
                     required
-                    placeholder=""
+                    placeholder="Nama lengkap"
                   />
 
                   <br /><br />
@@ -68,7 +68,7 @@
                     id="NIM"
                     pattern="[A-Za-z]{5,8}"
                     required
-                    placeholder="min 5 karakter,max 8 karakter"
+                    placeholder="min 5 karakter, max 8 karakter"
                   />
 
                   <br /><br />
@@ -79,7 +79,8 @@
                   <input
                     type="email"
                     id="email"
-                    pattern="[A-Za-z]{5,23}"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    title="Masukkan alamat email yang valid"
                     required
                     placeholder="example@gmail.com"
                   />
@@ -90,7 +91,8 @@
                   >
                   <br />
                   <input
-                    type="text"
+                    type="tel"
+                    title="Nomor telepon harus berupa angka dan minimal 12 digit"
                     id="noWA"
                     pattern="[0-9]{12,}"
                     required
