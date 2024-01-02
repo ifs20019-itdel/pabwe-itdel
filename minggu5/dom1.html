@@ -1,4 +1,4 @@
-<!-- 
+<!--
     Nama File   : mahasiswa.html
     NIM         : 11S20019
     Kelas       : 13IF1
@@ -18,48 +18,45 @@
       crossorigin="anonymous"
     />
 <style>
-    .red{
-            color:purple;
-        }
-    </style>
+    .purple{
+        color:purple;
+    }
+</style>
     <title>Website</title>
   </head>
   <body>
     <br>
     <form action="" method="get">
-  <div class="form-group">
-   <label for="yourName" style="padding-left:8px;">Masukkan Nama Anda :</label>
-    <input type="text" class="form-control" id="yourName" aria-describedby="emailHelp" placeholder="Nama Kamu...." style="width:400px;border-radius:15px;position:sticky;left:6px">
-      <button type="button" class="btn btn-dark" onclick="displayName();"style="width:120px;top:135px;border-radius:15px;position: absolute;left:8px;">Insert</button>
+      <div class="form-group">
+        <label for="yourName" style="padding-left:8px;">Masukkan Nama Anda :</label>
+        <input type="text" class="form-control" id="yourName" aria-describedby="emailHelp" placeholder="Nama Kamu...." style="width:400px;border-radius:15px;position:sticky;left:6px">
+        <button type="button" class="btn btn-dark" onclick="displayName();" style="width:120px;top:135px;border-radius:15px;position: absolute;left:8px;">Insert</button>
 
-                      <h5 id="infoName" style="left:11px;position:absolute;top:92px;">Nama saya adalah <span id="displayName"></span></h5>
-                      <br>
-                      <hr>
-                <button type="button" onclick="changeColor()" class="btn btn-primary" style="border-radius:15px;position:absolute;top:180px;left:8px;width:120px;">Ubah Warna</button>
-    
+        <h5 id="infoName" style="left:11px;position:absolute;top:92px;">Nama saya adalah <span id="displayName"></span></h5>
+        <br>
+        <hr>
+        <button type="button" id="btnToggleColor" onclick="changeColor()" class="btn btn-primary" style="border-radius:15px;position:absolute;top:180px;left:8px;width:120px;">Ubah Warna</button>
+      </div>
+    </form>
 
     <script>
-                function displayName(){
-            let name = document.getElementById("yourName").value;
+      function displayName(){
+        let name = document.getElementById("yourName").value;
+        document.getElementById("displayName").innerText = name;
+      }
 
-            document.getElementById("displayName").innerText = name;
+      function changeColor(){
+        let infoElement = document.getElementById("infoName");
+        let buttonElement = document.getElementById("btnToggleColor");
+        if(infoElement.classList.contains("purple")){
+          infoElement.classList.remove("purple");
+          buttonElement.innerText = "Ubah Warna";
+        }else{
+          infoElement.classList.add("purple");
+          buttonElement.innerText = "Kembalikan Warna";
         }
-
-        // Mengubah warna
-        function changeColor(){
-            if(document.getElementById("infoName").classList.contains("red")){
-                document.getElementById("infoName").classList.remove("red");
-                document.getElementById("btnToggleShow").innerText = "Sembunyikan";
-            }else{
-                document.getElementById("infoName").classList.add("red");
-                document.getElementById("btnToggleShow").innerText = "Tampilkan";
-                document.getElementById("infoName").classList.remove("red");
-                
-            }
-        }
+      }
     </script>
-    </form>
 
   </body>
 </html>
-
